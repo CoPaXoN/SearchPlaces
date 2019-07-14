@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- entries is a String array that the user sees, entryValues are the values saved to the SharedPreferences file
+    <PreferenceCategory android:title="@string/distance_header"> -->
+
+        <ListPreference
+
+            android:key="units_key"
+            android:title="@string/distance_header"
+
+            android:summary="@string/distance_sumary"
+            android:entries="@array/distance_units"
+            android:entryValues="@array/distance_units_values"
+        />
+
+    <!--android:defaultValue="km"-->
+    <!--</PreferenceCategory>-->
+    <!--<PreferenceCategory android:title="@string/radius_summary">-->
+
+     <EditTextPreference
+
+         android:key="radius_key"
+         android:title="@string/radius_header"
+         android:summary="@string/radius_summary"
+         android:hint="@string/radius_hint"
+         android:defaultValue="3" />
+
+    <!-- <ListPreference
+         android:key="radius_key"
+         android:title="@string/radius_header"
+         android:summary="@string/radius_summary"
+         android:entries="@array/radius"
+         android:entryValues="@array/radius_values"
+         android:defaultValue="3000"
+     />
+     -->
+ <!--</PreferenceCategory>-->
+
+</PreferenceScreen>
